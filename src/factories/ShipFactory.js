@@ -1,5 +1,4 @@
-function Ship(coordinates) {
-    
+function Ship(coordinates, type) {
     let hits = [];
     let sunk = false; 
 
@@ -18,6 +17,8 @@ function Ship(coordinates) {
     }
 
     return {
+        type,
+        coordinates,
         hit,
         hits,
         isSunk

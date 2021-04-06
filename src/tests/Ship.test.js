@@ -3,7 +3,7 @@ import Ship from '../factories/ShipFactory';
 let carrier;
 
 beforeEach(() => {
-    return carrier = Ship([0, 1, 2,]);
+    return carrier = Ship([0, 1, 2,], 'carrier');
 });
 
 test('ship never hit', () => {
